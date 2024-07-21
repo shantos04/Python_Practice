@@ -239,6 +239,8 @@ print(np_test)
 
 # TASK 16
 
+"""
+
 import numpy as np
 
 baseball = [[180, 78.4],
@@ -254,3 +256,36 @@ print(type(np_baseball))
 
 # Print out the shape of np_baseball
 print(np_baseball.shape)
+"""
+
+# TASK 17
+
+"""
+import numpy as np
+
+np_baseball = np.array(baseball)
+
+# Print out the 50th row of np_baseball
+print(np_baseball[49, :])
+
+# Select the entire second column of np_baseball: np_weight_lb
+np_weight_lb = np.array(np_baseball[:, 1])
+
+# Print out height of 124th player
+print(np_baseball[123, 0])
+"""
+
+# TASK 18
+
+"""
+import numpy as np
+
+# Create np_height_in from np_baseball
+np_height_in = np.array(np_baseball[:, 0])
+
+# Print out the mean of np_height_in
+print(np.mean(np_height_in))
+
+# Print out the median of np_height_in
+print(np.median(np_height_in))
+"""
