@@ -96,7 +96,7 @@ def clean_text(text, lower = True):
 
 # TASK 7
 
-
+"""
 # Create the convert_data_structure function
 def convert_data_structure(data, data_type = "list"):
   
@@ -114,3 +114,83 @@ def convert_data_structure(data, data_type = "list"):
 # Call the function to convert to a set
 result_set = convert_data_structure({"a", 1, "b", 2, "c", 3}, data_type="set")
 print(type(result_set))
+"""
+
+# TASK 8
+
+"""
+def clean_string(text):
+  
+  # Add a single-line docstring
+  """swap spaces to underscores and convert text to lowercase."""
+  
+  no_spaces = text.replace(" ", "_")
+  clean_text = no_spaces.lower()
+  return clean_text
+
+# Access the docstring
+print(clean_string.__doc__)
+"""
+
+# TASK 9
+
+"""
+# Create the convert_data_type function
+def convert_data_structure(data, data_type="list"):
+  # Add a multi-line docstring
+  """
+  Convert a data structure to a list, tuple, or set.
+  
+  Args:
+  	data (list, tuple, or set): A data structure to be converted.
+    data_type (str): String representing the type of structure to convert data to.
+    
+  Returns:
+  	data (list, tuple, or set): Converted data structure.
+  """
+  if data_type == "tuple":
+    data = tuple(data)
+  elif data_type == "set":
+    data = set(data)
+  else:
+    data = list(data)
+  return data
+
+print(help(convert_data_structure))
+"""
+
+# TASK 10
+
+"""
+# Define a function called concat
+def concat(*args):
+  
+  # Create an empty string
+  result = ''
+  
+  # Iterate over the Python args tuple
+  for arg in args:
+    result += " " + arg
+  return result
+
+# Call the function
+print(concat("Python", "is", "great!"))
+"""
+
+# TASK 11
+
+"""
+# Define a function called concat
+def concat(**kwargs):
+  
+  # Create an empty string
+  result = ""
+  
+  # Iterate over the Python kwargs
+  for kwarg in kwargs.values():
+    result += " " + kwarg
+  return result
+
+# Call the function
+print(concat(start = "Python", middle = "is", end = "great!"))
+"""
