@@ -122,7 +122,7 @@ print(type(result_set))
 def clean_string(text):
   
   # Add a single-line docstring
-  """swap spaces to underscores and convert text to lowercase."""
+    swap spaces to underscores and convert text to lowercase.
   
   no_spaces = text.replace(" ", "_")
   clean_text = no_spaces.lower()
@@ -138,7 +138,7 @@ print(clean_string.__doc__)
 # Create the convert_data_type function
 def convert_data_structure(data, data_type="list"):
   # Add a multi-line docstring
-  """
+
   Convert a data structure to a list, tuple, or set.
   
   Args:
@@ -147,7 +147,7 @@ def convert_data_structure(data, data_type="list"):
     
   Returns:
   	data (list, tuple, or set): Converted data structure.
-  """
+  
   if data_type == "tuple":
     data = tuple(data)
   elif data_type == "set":
@@ -194,3 +194,26 @@ def concat(**kwargs):
 # Call the function
 print(concat(start = "Python", middle = "is", end = "great!"))
 """
+# TASK 12
+
+"""
+sale_price = 29.99
+
+# Define a lambda function called add_tax
+add_tax = lambda x: x * 1.2
+
+# Call the lambda function
+print(add_tax(sale_price))
+
+sale_price = 29.99
+"""
+
+# TASK 13
+
+import string
+
+# Call a lambda function adding 20% to sale_price
+names = ["john", "xuong"]
+capitalize_name = map(lambda x: x.capitalize(), names)
+
+print(capitalize_name)
