@@ -234,6 +234,7 @@ print(list(add_taxes))
 
 # TASK 15
 
+"""
 def snake_case(text):
   # Attempt to clean the text
   try:
@@ -243,7 +244,7 @@ def snake_case(text):
   # Run this code if an error occurs
   except:
     print("The snake_case() function expects a string as an argument, please check the data type provided.")
-    
+
 snake_case("User Name 187")
 
 def snake_case(text):
@@ -254,5 +255,12 @@ def snake_case(text):
   else:
     # Return a TypeError error if the wrong data type was used
     raise TypeError("The snake_case() function expects a string as an argument, please check the data type provided.")
-    
+
 snake_case("User Name 187")
+"""
+
+# TASK 16
+
+pythonistas = {'hugo' : 'bowne-anderson', 'francis' : 'castro'}
+for key, value in pythonistas.items():
+  print(key, value)
