@@ -177,8 +177,7 @@ print(counts_dict)
 """
 # Define count_entries()
 def count_entries(csv_file, c_size, colname):
-    """Return a dictionary with counts of
-    occurrences as value for each key."""
+    Return a dictionary with counts of occurrences as value for each key.
     
     # Initialize an empty dictionary: counts_dict
     counts_dict = {}
@@ -202,3 +201,14 @@ result_counts = count_entries('tweets.csv', 10, 'lang')
 # Print result_counts
 print(result_counts)
 """
+
+# TASK 9
+
+# Create a list of strings: fellowship
+fellowship = ['frodo', 'samwise', 'merry', 'aragorn', 'legolas', 'boromir', 'gimli']
+
+# Create list comprehension: new_fellowship
+new_fellowship = [member for member in fellowship if len(member) >= 7]
+
+# Print the new list
+print(new_fellowship)
