@@ -571,6 +571,7 @@ plt.show()
 # TASK 28
 
 """
+import pandas as pd
 # Define plot_pop()
 def plot_pop(filename, country_code):
 
