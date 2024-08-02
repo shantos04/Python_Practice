@@ -79,3 +79,16 @@ first_nine_names = ", ".join(boy_names[0:9])
 # Print f-string preamble, first_nine_names, conjunction, the final item in boy_names and a period
 print(f"{preamble}{first_nine_names}{conjunction} {boy_names[-1]}.")
 """
+
+# TASK 7
+
+
+# Store a list of girl_names that start with s: names_with_s
+names_with_s = [name for name in girl_names if name.lower().startswith('s')]
+
+print(names_with_s)
+
+# Store a list of girl_names that contain angel: names_with_angel
+names_with_angel = [name for name in girl_names if 'angel' in name.lower()]
+
+print(names_with_angel)
