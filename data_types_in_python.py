@@ -82,7 +82,7 @@ print(f"{preamble}{first_nine_names}{conjunction} {boy_names[-1]}.")
 
 # TASK 7
 
-
+"""
 # Store a list of girl_names that start with s: names_with_s
 names_with_s = [name for name in girl_names if name.lower().startswith('s')]
 
@@ -92,3 +92,34 @@ print(names_with_s)
 names_with_angel = [name for name in girl_names if 'angel' in name.lower()]
 
 print(names_with_angel)
+"""
+
+# TASK 8
+
+"""
+# Create an empty dictionary: squirrels_by_park
+squirrels_by_park = {}
+
+# Loop over the squirrels list and unpack each tuple
+for park, squirrel_details in squirrels:
+    # Add each squirrel_details to the squirrels_by_park dictionary 
+    squirrels_by_park[park] = squirrel_details
+    
+# Sort the squirrels_by_park dict alphabetically by park
+for park in sorted(squirrels_by_park):
+    # Print each park and its value in squirrels_by_park
+    print(f'{park}: {squirrels_by_park[park]}')
+"""
+
+# TASK 9
+
+"""
+# Safely print 'Union Square Park' from the squirrels_by_park dictionary
+print(squirrels_by_park.get('Union Square Park'))
+
+# Safely print the type of 'Fort Tryon Park' from the squirrels_by_park dictionary
+print(type(squirrels_by_park.get('Fort Tryon Park')))
+
+# Safely print 'Central Park' from the squirrels_by_park dictionary or 'Not Found'
+print(squirrels_by_park.get('Central Park', 'Not Found'))
+"""
