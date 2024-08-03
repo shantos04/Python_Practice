@@ -123,3 +123,34 @@ print(type(squirrels_by_park.get('Fort Tryon Park')))
 # Safely print 'Central Park' from the squirrels_by_park dictionary or 'Not Found'
 print(squirrels_by_park.get('Central Park', 'Not Found'))
 """
+
+# TASK 10
+
+"""
+# Assign squirrels_madison as the value to the 'Madison Square Park' key
+squirrels_by_park['Madison Square Park'] = squirrels_madison
+
+# Update squirrels_by_park with the squirrels_union tuple
+squirrels_by_park.update([squirrels_union])
+
+# Loop over the park_name in the squirrels_by_park dictionary 
+for park_name in squirrels_by_park:
+    # Safely print a list of the primary_fur_color for each squirrel in park_name
+    print(park_name, [squirrel.get('primary_fur_color', 'N/A') for squirrel in squirrels_by_park[park_name]])  
+"""
+
+# TASK 11
+
+"""
+# Remove "Madison Square Park" from squirrels_by_park
+squirrels_madison = squirrels_by_park.pop("Madison Square Park")
+
+# Safely remove "City Hall Park" from squirrels_by_park with an empty dictionary as the default
+squirrels_city_hall = squirrels_by_park.pop("City Hall Park", {})
+
+# Delete "Union Square Park" from squirrels_by_park
+del squirrels_by_park["Union Square Park"]
+
+# Print squirrels_by_park
+print(squirrels_by_park)
+"""
