@@ -154,3 +154,37 @@ del squirrels_by_park["Union Square Park"]
 # Print squirrels_by_park
 print(squirrels_by_park)
 """
+
+# TASK 12
+
+"""
+# Iterate over the first squirrel entry in the Madison Square Park list
+for field, value in squirrels_by_park["Madison Square Park"][0].items():
+    # Print field and value
+    print(field, value)
+
+print('-' * 13)
+
+# Iterate over the second squirrel entry in the Union Square Park list
+for field, value in squirrels_by_park["Union Square Park"][1].items():
+    # Print field and value
+    print(field, value)
+"""
+
+# TASK 13
+
+"""
+# Check to see if Tompkins Square Park is in squirrels_by_park
+if "Tompkins Square Park" in squirrels_by_park:
+    # Print 'Found Tompkins Square Park'
+    print('Found Tompkins Square Park')
+    
+# Check to see if Central Park is in squirrels_by_park
+if "Central Park" in squirrels_by_park:
+    # Print 'Found Central Park' if found
+    print('Found Central Park')
+else:
+    # Print 'Central Park missing' if not found
+    print('Central Park missing')
+"""
+
