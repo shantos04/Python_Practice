@@ -188,3 +188,29 @@ else:
     print('Central Park missing')
 """
 
+# TASK 14
+
+"""
+# Print a list of keys from the squirrels_by_park dictionary
+print(squirrels_by_park.keys())
+
+# Print the keys from the squirrels_by_park dictionary for 'Union Square Park'
+print(squirrels_by_park['Union Square Park'].keys())
+
+# Loop over the dictionary
+for park_name in squirrels_by_park:
+    # Safely print the park_name and the highlights_in_fur_color or 'N/A'
+    print(park_name, squirrels_by_park[park_name].get('highlights_in_fur_color', 'N/A'))
+"""
+
+# TASK 15
+
+"""
+# Use a for loop to iterate over the squirrels in Tompkins Square Park:
+for squirrel in squirrels_by_park["Tompkins Square Park"]:
+	# Safely print the activities of each squirrel or None
+    print(squirrel.get("activities"))
+    
+# Print the list of 'Cinnamon' primary_fur_color squirrels in Union Square Park
+print([squirrel for squirrel in squirrels_by_park["Union Square Park"] if squirrel["primary_fur_color"] == "Cinnamon"])
+"""
