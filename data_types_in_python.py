@@ -205,7 +205,7 @@ for park_name in squirrels_by_park:
 
 # TASK 15
 
-"""
+
 # Use a for loop to iterate over the squirrels in Tompkins Square Park:
 for squirrel in squirrels_by_park["Tompkins Square Park"]:
 	# Safely print the activities of each squirrel or None
@@ -213,4 +213,3 @@ for squirrel in squirrels_by_park["Tompkins Square Park"]:
     
 # Print the list of 'Cinnamon' primary_fur_color squirrels in Union Square Park
 print([squirrel for squirrel in squirrels_by_park["Union Square Park"] if squirrel["primary_fur_color"] == "Cinnamon"])
-"""
