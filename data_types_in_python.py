@@ -323,3 +323,132 @@ overlapping_species = female_penguin_species.intersection(male_penguin_species)
 # Print the count of species in overlapping_species
 print(len(overlapping_species))
 """
+
+# TASK 23
+
+"""
+# Import the Counter object
+from collections import Counter
+
+# Create a Counter of the penguins sex using a list comp
+penguins_sex_counts = Counter(penguin['Sex'] for penguin in penguins)
+
+# Print the penguins_sex_counts
+print(penguins_sex_counts)
+"""
+
+# TASK 24
+
+"""
+# Import the Counter object
+from collections import Counter
+
+# Create a Counter of the penguins list: penguins_species_counts
+penguins_species_counts = Counter(penguin['Species'] for penguin in penguins)
+
+# Find the 3 most common species counts
+print(penguins_species_counts.most_common(3)) 
+"""
+
+# TASK 25
+
+"""
+# Create an empty dictionary: female_penguin_weights
+female_penguin_weights = {}
+
+# Iterate over the weight_log entries
+for species, sex, body_mass in weight_log:
+    # Check to see if species is already in the dictionary
+    if species not in female_penguin_weights:
+        # Create an empty list for any missing species
+        female_penguin_weights[species] = []
+    # Append the sex and body_mass as a tuple to the species keys list
+    female_penguin_weights[species].append((sex, body_mass))
+    
+# Print the weights for 'Adlie'
+print(female_penguin_weights['Adlie'])
+"""
+
+# TASK 26
+
+"""
+# Import defaultdict
+from collections import defaultdict
+
+# Create a defaultdict with a default type of list: male_penguin_weights
+male_penguin_weights = defaultdict(list)
+
+# Iterate over the weight_log entries
+for species, sex, body_mass in weight_log:
+    # Use the species as the key, and append the body_mass to it
+    male_penguin_weights[species].append(body_mass)
+    
+# Print the first 2 items of the male_penguin_weights dictionary
+print(list(male_penguin_weights.items())[:2])
+"""
+
+# TASK 27
+
+"""
+# Import namedtuple from collections
+from collections import namedtuple
+
+# Create the namedtuple: SpeciesDetails
+SpeciesDetails = namedtuple("SpeciesDetails", ['species', 'sex', 'body_mass'])
+
+# Create the empty list: labeled_entries
+labeled_entries = []
+
+# Iterate over the weight_log entries
+for species, sex, body_mass in weight_log:
+    # Append a new SpeciesDetails namedtuple instance for each entry to labeled_entries
+    labeled_entries.append(SpeciesDetails(species, sex, body_mass))
+    
+print(labeled_entries[:5])
+"""
+
+# TASK 28
+
+"""
+# Iterate over the first twenty entries in labeled_entries
+for entry in labeled_entries[:20]:
+    # if the entry's species equals Chinstrap
+    if entry.species == 'Chinstrap':
+      # Print each entry's sex and body_mass seperated by a colon
+      print(f'{entry.sex}:{entry.body_mass}')
+"""
+
+# TASK 29
+
+"""
+# Import dataclass
+from dataclasses import dataclass
+
+@dataclass
+class WeightEntry:
+    # Define the fields on the class
+    species: str
+    body_mass: int
+    flipper_length: int
+    sex: str
+        
+    # Define a property that returns the body_mass / flipper_length
+    @property
+    def mass_to_flipper_length_ratio(self):
+        return self.body_mass / self.flipper_length
+"""
+
+# TASK 30
+
+"""
+# Create the empty list: labeled_entries
+labeled_entries = []
+
+# Iterate over the weight_log entries
+for species, flipper_length, body_mass, sex in weight_log:
+    # Append a new WeightEntry instance to labeled_entries
+    labeled_entries.append(WeightEntry(species, flipper_length, body_mass, sex))
+    
+# Print a list of the first 5 mass_to_flipper_length_ratio values
+print([entry.mass_to_flipper_length_ratio for entry in labeled_entries[:5]])    
+"""
