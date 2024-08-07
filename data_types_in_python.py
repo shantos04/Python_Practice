@@ -205,7 +205,7 @@ for park_name in squirrels_by_park:
 
 # TASK 15
 
-
+"""
 # Use a for loop to iterate over the squirrels in Tompkins Square Park:
 for squirrel in squirrels_by_park["Tompkins Square Park"]:
 	# Safely print the activities of each squirrel or None
@@ -213,3 +213,80 @@ for squirrel in squirrels_by_park["Tompkins Square Park"]:
     
 # Print the list of 'Cinnamon' primary_fur_color squirrels in Union Square Park
 print([squirrel for squirrel in squirrels_by_park["Union Square Park"] if squirrel["primary_fur_color"] == "Cinnamon"])
+"""
+
+# TASK 16
+
+"""
+# Print floats 1, 2, and 3
+print(float1)
+print(float2)
+print(float3)
+
+# Print floats 2 and 3 using the f string formatter
+print(f"{float2:f}")
+print(f"{float3:f}")
+
+# Print float 3 with a 7 f string precision
+print(f"{float3:.7f}")
+"""
+
+# TASK 17
+
+"""
+# Print the result of 2/1 and 1/2
+print(2/1)
+print(1/2)
+
+# Print the floored division result of 2//1 and 1//2
+print(2//1)
+print(1//2)
+
+# Print the type of 2/1 and 2//1
+print(type(2/1))
+print(type(2//1))
+"""
+# TASK 18
+
+"""
+# Create an empty list
+my_list = []
+
+# Check the truthiness of my_list
+print(bool(my_list))
+
+# Append the string 'cookies' to my_list
+my_list.append('cookies')
+
+# Check the truthiness of my_list
+print(bool(my_list))
+"""
+
+# TASK 19
+
+"""
+# Use a for loop to iterate over the penguins list
+for penguin in penguins:
+  # Check the penguin entry for a body mass of more than 3300 grams
+  if penguin["body_mass"] > 3300:
+  	# Print the species and sex of the penguin if true
+    print(f"{penguin['species']} - {penguin['sex']}")
+"""
+
+# TASK 20
+
+"""
+# Check the truthiness of penguin_305_details sex key
+if penguin_305_details["sex"]:
+	# If true, check if sex is True and store it as sex_is_true
+    sex_is_true = penguin_305_details["sex"] is True
+    # Print the sex key's value and sex_is_true
+    print(f"{penguin_305_details['sex']}: {sex_is_true}")
+
+# Check the truthiness of penguin_305_details tracked key
+if penguin_305_details["tracked"]:
+	# If true, check if tracked is True and store it as tracked_is_true
+    tracked_is_true = penguin_305_details["tracked"] is True
+    # Print the tracked key and tracked_is_true
+    print(f"{penguin_305_details['tracked']}: {tracked_is_true}")
+"""
