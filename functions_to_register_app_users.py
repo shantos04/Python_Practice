@@ -40,7 +40,7 @@ def register_user(name, email, password):
         return False
     
 name = "Luong Tuan Vy"
-email = "luongtuanvy123@gmail.com"
+email = "example.com"
 password = "Hellohello1"
 
 new_user = register_user(name, email, password)
