@@ -118,3 +118,26 @@ data_array = data.to_numpy()
 # Print the datatype of data_array to the shell
 print(type(data_array))
 """
+
+# TASK 8
+
+"""
+# Import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+
+# Assign filename: file
+file = 'titanic_corrupt.txt'
+
+# Import file: data
+data = pd.read_csv(file, sep='\t', comment='#', na_values='Nothing')
+
+# Print the head of the DataFrame
+print(data.head())
+
+# Plot 'Age' variable in a histogram
+pd.DataFrame.hist(data[['Age']])
+plt.xlabel('Age (years)')
+plt.ylabel('count')
+plt.show()
+
+"""
