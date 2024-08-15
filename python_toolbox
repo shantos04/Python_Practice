@@ -612,3 +612,14 @@ plot_pop('ind_pop_data.csv', 'CEB')
 # Call plot_pop for country code 'ARB'
 plot_pop('ind_pop_data.csv', 'ARB')
 """
+
+# TASK 29
+"""
+def read_large_file(file_object):
+    A generator function to read a large file lazily.
+    while True:
+        data = file_object.readline()
+        if not data:
+            break
+        yield data
+"""
